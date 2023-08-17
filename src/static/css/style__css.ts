@@ -19,6 +19,8 @@ const style__css: WebviewParams = (
     }
     .file-drag-drop * {
         display: block;
+    }
+    .file-drag-drop .els {
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;

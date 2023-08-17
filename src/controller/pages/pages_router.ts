@@ -127,22 +127,6 @@ router.post('/', async (
                     },
                 }
             )
-        } else if (body.image.name.split('.').length !== 2) {
-            // return error(400, 'Bad Request');
-            return new Response(
-                index__html({
-                    ...index__base__context,
-                    server_notification: {
-                        message: 'Bad Request',
-                        alert_type: 'alert-danger',
-                    } as ServerResponse,
-                }), {
-                    status: 400,
-                    headers: {
-                        'content-type': 'text/html; charset=utf-8',
-                    },
-                }
-            )
         }
     } catch (e) {
         console.error(e);

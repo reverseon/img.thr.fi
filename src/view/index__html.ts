@@ -82,8 +82,8 @@ const index__html: WebviewParams = (
                     <span class="form-label-text fs-5 fw-bold">Select or Drag an Image</span>
                     <i class="bi bi-cloud-arrow-up-fill drag-icons fs-1 mt-3"></i> 
                     <span class="form-label-text">Maximum file size: 10MB</span>
-                    <span class="form-label-text">Accepted file types: JPG, PNG, GIF</span>
-                    <span class="form-label-text">Selected File: <span id="filename-text" class="fw-bold">None</span></span>
+                    <span class="form-label-text">Accepted file types: JPG, PNG, or GIF</span>
+                    <span class="form-label-text els">Selected File: <span id="filename-text" class="fw-bold">None</span></span>
                     <input class="form-control file-chosen" id="image" type="file" name="image" accept="image/jpeg,image/png,image/gif" />
                 </label>
                 <button type="submit" class="btn btn-lg btn-primary mt-3 w-100" >Upload</button>

@@ -43,7 +43,8 @@ router.get('/:name', async (
             let response = new Response(
                 data.body, {}
             );
-            let ext = name.split('.')[1];
+            let namesplit = name.split('.');
+            let ext = namesplit[namesplit.length - 1];
             let contentType = contentTypeMapping(ext);
             data.writeHttpMetadata(response.headers);
             response.headers.set('etag', data.etag);

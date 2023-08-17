@@ -50,8 +50,6 @@ router.post('/create', async (
             return error(400, 'Image too large, max 10MB');
         } /* jpg, png, gif */ else if (!['image/jpeg', 'image/png', 'image/gif'].includes(body.image.type)) {
             return error(400, 'Only jpg, png, or gif allowed');
-        } else if (body.image.name.split('.').length !== 2) {
-            return error(400, 'Bad Request');
         }
     } catch (e) {
         console.error(e);
